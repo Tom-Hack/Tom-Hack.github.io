@@ -1,0 +1,68 @@
+/* Es ist daher nicht überraschend, dass das CSS-Layout auf dem Box-Modell basiert. Jede Box, die einen Raum auf Ihrer Webseite einnimmt,
+ hat folgende Eigenschaften:
+
+    padding, der Innenabstand: das ist der Raum direkt um den Inhalt des Elements (z.B. direkt um einen Absatz <p> drumherum)
+    border, der Rahmen: eine Linie, welche direkt außerhalb des padding sitzt
+    margin, der Außenabstand: der Raum außerhalb des Rahmens
+*/
+
+html {
+    font-size: 10px;
+    /* px bedeutet 'pixels': die Schriftgröße wird auf 10 Pixel gesetzt  */
+    font-family: 'Yellowtail', cursive;
+    /* hier kommt der Name der ausgewählten Schriftfamilie hin */
+    background-color: #dac9a1;
+}
+
+body {
+    /*width: 1025px; — die Breite (engl.: width) des <body>-Elements wird auf 600 Pixel festgelegt.*/
+    width: 1025px;
+    /*margin: 0 auto; — Wenn man bei den Eigenschaften margin oder padding zwei Werte setzt, 
+    dann steht der erste Wert für den Abstand nach oben und nach unten (welcher in diesem Fall 0 ist) 
+    und der zweite Wert steht für den Abstand links und rechts von dem Element (in diesem Fall setzen wir den Wert auf auto, 
+    wodurch der vorhandene Platz auf beiden Seiten des Elements gleichmäßig aufgeteilt wird)*/
+    margin: auto;
+    background-color: rgb(226, 167, 85);
+    /*padding: 0 30px 30px 30px; — für den Innenabstand haben wir vier Werte gesetzt, um etwas Raum um unseren Inhalt zu schaffen. 
+    Oben setzen wir keinen Abstand, aber auf der linken und rechten Seite, sowie unten setzen wir jeweils 30 Pixel. 
+    Die Werte werden in folgender Reihenfolge gesetzt: oben, rechts, unten, links.*/
+    padding: 0 30px 30px 30px;
+    border: 3px solid black;
+}
+
+h1,
+h2 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: rgba(124, 13, 9, 0.897);
+    /*Der erste Wert in Pixeln setzt den horizontalen Versatz des Schattens vom Text weg nach rechts - 
+    so weit fällt der Schatten: ein negativer Wert würde den Schatten nach links fallen lassen.
+    Der zweite Wert setzt den vertikalen Versatz des Schattens in Pixeln. 
+    Der Schatten fällt so weit nach unten, ein negativer Wert würde den Schatten nach oben fallen lassen.
+    Der dritte Wert setzt den Radius in Pixeln für den Bereich, in dem der Schatten verwischt ist. 
+    Ein größerer Wert hier bedeutet einen leichteren Schatteneffekt.*/
+    text-shadow: 3px 3px 1px black;
+}
+
+p,
+li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+
+/* hier kann man anstelle von "img" auch .center einsetzen*/
+
+
+/* .center bezieht sich auf das Class="Center" in der index.html - im beispiel nur auf das Bild "Katze" */
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* bezieht sich auf die breite des Bildes selber*/
+    width: 40%;
+}
