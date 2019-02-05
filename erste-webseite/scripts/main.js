@@ -11,9 +11,9 @@ myImage.onclick = function() {
 var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 function setUserName() {
-    var myName = prompt('Bitte geben Sie Ihren Namen ein.');
+    var myName = prompt('Bitte geben deinen Namen ein - BROCHA!.');
     localStorage.setItem('name', myName);
-    myHeading.textContent = 'Mozilla ist cool, ' + myName;
+    myHeading.textContent = 'Alles klar, lass endlich Titanfall zocken!, ' + myName;
   }
   if(!localStorage.getItem('name')) {
     setUserName();
